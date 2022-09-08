@@ -1,3 +1,4 @@
+#EndPoint de criar turma
 post http://localhost:3003/class
 Content-Type: application/json
 
@@ -5,3 +6,5 @@ Content-Type: application/json
   "name":"Alves",
   "modulo":"Modulo 5"
 }
+
+###
