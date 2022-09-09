@@ -4,6 +4,7 @@ import { AddressInfo } from "net"
 import knex from "knex"
 import createTurma from './endpoints/createTurma';
 import getTurma from './endpoints/getTurma';
+import alterarModulo from './endpoints/alterarModulo';
 
 const app: Express = express();
 
@@ -22,3 +23,5 @@ const server = app.listen(process.env.PORT || 3003, () => {
 app.post("/class", createTurma)
 
 app.get("/active", getTurma)
+
+app.put("/alter", alterarModulo)
