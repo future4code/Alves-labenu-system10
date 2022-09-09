@@ -10,7 +10,7 @@ const createClass = async (name:string, modulo:string): Promise<void> =>{
     name: name,
     modulo:modulo
   }
-  await connection("Turma").insert(response)
+  await connection("Turmas").insert(response)
 }
 
 export default createClass
