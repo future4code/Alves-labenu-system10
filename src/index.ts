@@ -6,6 +6,7 @@ import createTurma from './endpoints/createTurma';
 import getTurma from './endpoints/getTurma';
 import alterarModulo from './endpoints/alterarModulo';
 import createStudent from './endpoints/createStudent';
+import pegarStudent from './endpoints/pegarStudent';
 
 const app: Express = express();
 
@@ -28,3 +29,5 @@ app.get("/active", getTurma)
 app.put("/alter", alterarModulo)
 
 app.post("/student", createStudent)
+
+app.get("/student/:nome", pegarStudent)

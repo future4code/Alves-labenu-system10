@@ -32,3 +32,7 @@ Content-Type:  application/json
   "data_nasc":"18/03/2003",
   "turma_id":"1662678786606"
 }
+
+###
+#pegar estudante
+get http://localhost:3003/student/Rafael
