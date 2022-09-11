@@ -5,6 +5,7 @@ import knex from "knex"
 import createTurma from './endpoints/createTurma';
 import getTurma from './endpoints/getTurma';
 import alterarModulo from './endpoints/alterarModulo';
+import createStudent from './endpoints/createStudent';
 
 const app: Express = express();
 
@@ -25,3 +26,5 @@ app.post("/class", createTurma)
 app.get("/active", getTurma)
 
 app.put("/alter", alterarModulo)
+
+app.post("/student", createStudent)

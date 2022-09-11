@@ -20,3 +20,15 @@ Content-Type:  application/json
   "id":"1662678868726",
   "modulo":"3" 
 }
+
+###
+#criar estudante
+post http://localhost:3003/student
+Content-Type:  application/json
+
+{
+  "nome":"Rafael",
+  "email":"rafael@email.com",
+  "data_nasc":"18/03/2003",
+  "turma_id":"1662678786606"
+}
