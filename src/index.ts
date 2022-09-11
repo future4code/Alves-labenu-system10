@@ -9,6 +9,7 @@ import createStudent from './endpoints/createStudent';
 import pegarStudent from './endpoints/pegarStudent';
 import mudarStudent from './endpoints/mudarStudent';
 import newDocente from './endpoints/newDocente';
+import pegarDocentes from './endpoints/pegarDocentes';
 
 const app: Express = express();
 
@@ -37,3 +38,5 @@ app.get("/student/:nome", pegarStudent)
 app.put("/alterclass", mudarStudent)
 
 app.post("/docente", newDocente)
+
+app.get("/docentes", pegarDocentes)

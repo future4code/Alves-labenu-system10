@@ -59,3 +59,9 @@ Content-Type:  application/json
   "data_nasc":"11/10/1997",
   "turma_id":"1662678786606"
 }
+
+###
+#retorna todos docentes
+get http://localhost:3003/docentes
+
+###
