@@ -1,0 +1,75 @@
+#EndPoint de criar turma
+post http://localhost:3003/class
+Content-Type: application/json
+
+{
+  "name":"test",
+  "modulo":"0"
+}
+
+###
+#pega todas turmas ativas
+get http://localhost:3003/active
+
+###
+#alterar modulo da turma
+put http://localhost:3003/alter
+Content-Type:  application/json
+
+{
+  "id":"1662678868726",
+  "modulo":"3" 
+}
+
+###
+#criar estudante
+post http://localhost:3003/student
+Content-Type:  application/json
+
+{
+  "nome":"Rafael",
+  "email":"rafael@email.com",
+  "data_nasc":"18/03/2003",
+  "turma_id":"1662678786606"
+}
+
+###
+#pegar estudante
+get http://localhost:3003/student/Rafael
+
+###
+#mudar estudante de turma
+put http://localhost:3003/alterclass
+Content-Type:  application/json
+
+{
+  "id":"2328079619322.1997",
+  "turma_id":"1662678786606"
+}
+
+###
+#
+
+post http://localhost:3003/docente
+Content-Type:  application/json
+
+{
+  "name":"Marcelo",
+  "email":"marcelo@email.com",
+  "data_nasc":"11/10/1997",
+  "turma_id":"1662678786606"
+}
+
+###
+#retorna todos docentes
+get http://localhost:3003/docentes
+
+###
+#mudar docente de turma
+put http://localhost:3003/alter/docent
+Content-Type:  application/json
+
+{
+  "id":"3991023331010.8003",
+  "turma_id":"1662678868726"
+}
