@@ -11,3 +11,11 @@ export type Estudante = {
   data_nasc:string,
   turma_id:string,
 }
+
+export type Docente = {
+  id:string,
+  name:string,
+  email:string,
+  data_nasc:string,
+  turma_id:string,
+}

@@ -7,6 +7,8 @@ import getTurma from './endpoints/getTurma';
 import alterarModulo from './endpoints/alterarModulo';
 import createStudent from './endpoints/createStudent';
 import pegarStudent from './endpoints/pegarStudent';
+import mudarStudent from './endpoints/mudarStudent';
+import newDocente from './endpoints/newDocente';
 
 const app: Express = express();
 
@@ -31,3 +33,7 @@ app.put("/alter", alterarModulo)
 app.post("/student", createStudent)
 
 app.get("/student/:nome", pegarStudent)
+
+app.put("/alterclass", mudarStudent)
+
+app.post("/docente", newDocente)

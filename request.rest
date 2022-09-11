@@ -36,3 +36,26 @@ Content-Type:  application/json
 ###
 #pegar estudante
 get http://localhost:3003/student/Rafael
+
+###
+#mudar estudante de turma
+put http://localhost:3003/alterclass
+Content-Type:  application/json
+
+{
+  "id":"2328079619322.1997",
+  "turma_id":"1662678786606"
+}
+
+###
+#
+
+post http://localhost:3003/docente
+Content-Type:  application/json
+
+{
+  "name":"Marcelo",
+  "email":"marcelo@email.com",
+  "data_nasc":"11/10/1997",
+  "turma_id":"1662678786606"
+}
