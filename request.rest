@@ -66,10 +66,10 @@ get http://localhost:3003/docentes
 
 ###
 #mudar docente de turma
-http://localhost:3003//alter/docent
+put http://localhost:3003/alter/docent
 Content-Type:  application/json
 
 {
-  "id":"",
-  "turma_id":""
+  "id":"3991023331010.8003",
+  "turma_id":"1662678868726"
 }
